@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'iconFont';
+  src: url('../fonts/iconFont.eot');
+  src: url('../fonts/iconFont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconFont.svg#iconFont') format('svg'), url('../fonts/iconFont.woff') format('woff'), url('../fonts/iconFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'iconFont';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  margin: 0 2px;
+  -webkit-font-smoothing: antialiased;
+  border: 1px transparent solid;
+}
+
+.icon-facebook:before {
+	content: "\e0be";
+}
+.icon-mail:before {
+  content: "\e01a";
+}
+.icon-twitter:before {
+  content: "\e0c0";
+}
+.icon-blogger:before {
+  content: "\e0d1";
+}
+.icon-twitter:before {
+  content: "\e0c0";
+}
+.icon-feed:before {
+  content: "\e0c1";
+}
+.icon-youtube:before {
+  content: "\e0c2";
+}
+.icon-vimeo:before {
+  content: "\e0c3";
+}
+.icon-flickr:before {
+  content: "\e0c4";
+}
+.icon-google-plus:before {
+  content: "\e0bc";
+}
+.icon-github:before {
+  content: "\e0c8";
+}
+.icon-github-2:before {
+  content: "\e0c9";
+}
+.icon-github-3:before {
+  content: "\e0ca";
+}
+.icon-github-4:before {
+  content: "\e0cb";
+}
+.icon-github-5:before {
+  content: "\e0cc";
+}
+.icon-git:before {
+  content: "\e0cd";
+}
+.icon-github-6:before {
+  content: "\e0ce";
+}
+.icon-lastfm:before {
+  content: "\e0de";
+}
+.icon-reddit:before {
+  content: "\e0dc";
+}
+.icon-coderwall:before {
+  // content: "\e0b6";
+  content: "\e12f";
+}

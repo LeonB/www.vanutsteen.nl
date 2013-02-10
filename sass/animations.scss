@@ -1,0 +1,99 @@
+.box {
+	&.blog {
+		i {
+			display: block;
+			width: 100%;
+			height: 100%;
+			animation: rondje 60s linear infinite alternate;
+			-moz-animation: rondje 30s linear infinite alternate;
+			-webkit-animation: rondje 20s linear infinite alternate;
+		}
+	}
+
+	&.youtube {
+		i {
+			display: block;
+			width: 100%;
+			height: 100%;
+			animation: pulse 2s ease-in-out infinite alternate;
+			-moz-animation: pulse 2s ease-in-out infinite alternate;
+			-webkit-animation: pulse 2s ease-in-out infinite alternate;
+		}
+	}
+}
+
+@keyframes rondje {
+	40%{
+		@include rotate(0deg);
+	}
+	41%{
+		@include rotate(360deg);
+	}
+
+	90%{
+		@include rotate(360deg);
+	}
+	91%{
+		@include rotate(0deg);
+	}
+}
+
+@-webkit-keyframes rondje {
+	40%{
+		@include rotate(0deg);
+	}
+	41%{
+		@include rotate(360deg);
+	}
+
+	90%{
+		@include rotate(360deg);
+	}
+	91%{
+		@include rotate(0deg);
+	}
+}
+
+@-moz-keyframes rondje {
+	40%{
+		@include rotate(0deg);
+	}
+	41%{
+		@include rotate(360deg);
+	}
+
+	90%{
+		@include rotate(360deg);
+	}
+	91%{
+		@include rotate(0deg);
+	}
+}
+
+@keyframes pulse {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.4;
+	}
+}
+
+
+@-webkit-keyframes pulse {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.4;
+	}
+}
+
+@-moz-keyframes pulse {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0.4;
+	}
+}
