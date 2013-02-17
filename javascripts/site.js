@@ -7,7 +7,7 @@ jQuery('.grid').masonry({
     // isAnimated: !Modernizr.csstransitions
 });
 
-jQuery.getJSON("http://v5.vanutsteen.nl/latest.json",
+jQuery.getJSON("http://blog.vanutsteen.nl/latest.json",
 	function(items){
 		var ul = jQuery('<ul>');
 
