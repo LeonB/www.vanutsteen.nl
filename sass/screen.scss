@@ -83,6 +83,8 @@ a, a:visited {
 		display: block;
 		float: left;
 		margin-left: 10px;
+		max-height: 200px;
+		overflow: hidden;
 	}
 
 	li {
