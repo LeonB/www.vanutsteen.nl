@@ -7,27 +7,27 @@ jQuery('.grid').masonry({
     // isAnimated: !Modernizr.csstransitions
 });
 
-jQuery.getJSON("http://blog.vanutsteen.nl/latest.json",
-	function(items){
-		var ul = jQuery('<ul>');
+jQuery.getJSON("http://blog.vanutsteen.nl/latest.json?callback=?",
+    function(items){
+        var ul = jQuery('<ul>');
 
-		for (var i=0; i < items.length; i++) {
-			item = items[i];
+        for (var i=0; i < items.length; i++) {
+            item = items[i];
 
-			var li = jQuery('<li>');
-			var a = jQuery('<a>');
-			a.html(item.title);
-			a.attr('href', item.link);
-			a.attr('target', '_blank');
+            var li = jQuery('<li>');
+            var a = jQuery('<a>');
+            a.html(item.title);
+            a.attr('href', item.link);
+            a.attr('target', '_blank');
 
-			li.append(a);
-			ul.append(li);
+            li.append(a);
+            ul.append(li);
 
-			if (i > 3) {
-				break;
-			}
-		};
+            if (i > 3) {
+                break;
+            }
+        };
 
-		ul.insertAfter('.box.blog a');
-	}
+        ul.insertAfter('.box.blog a');
+    }
 );
