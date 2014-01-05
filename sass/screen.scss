@@ -2,7 +2,7 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/images";
 @import "compass/css3/box-shadow";
-@import "compass/css3/transform-legacy";
+@import "compass/css3/transform";
 
 @import "masonry-transitions";
 @import "animations";
@@ -83,7 +83,7 @@ a, a:visited {
 		display: block;
 		float: left;
 		padding-left: 10px;
-		max-height: 200px;
+		max-height: 210px;
 		overflow: hidden;
 	}
 
